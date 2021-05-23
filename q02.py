@@ -2,7 +2,7 @@
 from itertools import combinations
 from math import prod
 
-dat = open("input.txt", "r").read().split()
+dat = open("inputs/q02.txt", "r").read().split()
 dat = [list(map(int, x.split("x"))) for x in dat]
 
 # part 1

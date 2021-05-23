@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-dat = list(open("input.txt", "r").read())
+dat = list(open("inputs/q03.txt", "r").read())
 
 # part 1
 map = defaultdict(lambda: 0)

@@ -53,24 +53,6 @@ class Password:
         return self
 
 
-# Password('abcdefgz').increment()
-
-
-# Password('hijklmmn').condition1()
-# Password('hijklmmn').condition2()
-
-# Password('abbceffg').condition3()
-# Password('abbceffg').condition1()
-
-# Password('abbcegjk').condition3()
-
-
-# passwd = Password('abcdefgh')
-# next(passwd)
-
-# passwd = Password('ghijklmn')
-# next(passwd)
-
 passwd = Password('vzbxkghb')
-next(passwd)
-next(passwd)
+print("Part1", next(passwd))
+print("Part2", next(passwd))

@@ -1,5 +1,5 @@
 from itertools import permutations
-
+import re 
 dat = open("inputs/q09.txt", "r").read().splitlines()
 
 dist = {}
@@ -16,5 +16,5 @@ tot = [
     for poss in permutations(places)
 ]
 
-print(min(tot))
-print(max(tot))
+print("Part1:", min(tot))
+print("Part2:", max(tot))

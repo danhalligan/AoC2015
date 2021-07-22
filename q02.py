@@ -1,4 +1,3 @@
-
 from itertools import combinations
 from math import prod
 
@@ -11,7 +10,7 @@ for x in dat:
     p = [i*j for i, j in combinations(x, 2)]
     tot += min(p) + sum(p)*2
 
-print(tot)
+print("Part1:", tot)
 
 # part 2
 tot = 0
@@ -19,4 +18,4 @@ for x in dat:
     x.sort()
     tot += sum(x[0:2])*2 + prod(x)
 
-print(tot)
+print("Part2:", tot)

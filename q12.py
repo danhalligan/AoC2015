@@ -1,7 +1,8 @@
 import re
 import json
 
-sum([int(x) for x in re.findall(r'-*\d+',open('inputs/q12.txt').read())])
+dat = open('inputs/q12.txt').read()
+print("Part1", sum([int(x) for x in re.findall(r'-*\d+', dat)]))
 
 def count_ints(x):
     if (isinstance(x, list)):
@@ -14,5 +15,4 @@ def count_ints(x):
         return(0)
 
 
-dat = json.loads(open('inputs/q12.txt').read())
-count_ints(dat)
+print("Part2", count_ints(json.loads(dat)))

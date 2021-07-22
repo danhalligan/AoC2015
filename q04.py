@@ -9,7 +9,7 @@ while hash != '00000':
     inp = key + str(i)
     hash = md5(inp.encode()).hexdigest()[0:5]
 
-print(i)
+print("Part1:", i)
 
 i = 0
 hash = ''
@@ -18,4 +18,4 @@ while hash != '000000':
     inp = key + str(i)
     hash = md5(inp.encode()).hexdigest()[0:6]
 
-print(i)
+print("Part2:", i)

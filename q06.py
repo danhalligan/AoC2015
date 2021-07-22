@@ -21,7 +21,7 @@ for x in dat:
         for j in range(c1[1], c2[1]+1):
             lights[i,j] = action(lights[i,j])
 
-int(sum(sum(lights)))
+print("Part1:", int(sum(sum(lights))))
 
 
 lights = np.zeros(shape = (1000,1000))
@@ -43,5 +43,5 @@ for x in dat:
             lights[i,j] = action(lights[i,j])
 
 
-int(sum(sum(lights)))
+print("Part2:", int(sum(sum(lights))))
 

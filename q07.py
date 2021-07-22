@@ -34,9 +34,9 @@ for x in dat:
     circuit[to] = fn
 
 
-print(circuit['a']())
+print("Part1:", circuit['a']())
 
 binfn.cache_clear()
 circuit['b'] = lambda: 3176
-print(circuit['a']())
+print("Part2:", circuit['a']())
 

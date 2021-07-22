@@ -5,6 +5,7 @@ from collections import defaultdict
 
 lines = open('inputs/q13.txt').read().splitlines()
 
+# Part 1
 rules = defaultdict(dict)
 for line in lines:
     s = line.split()
@@ -21,13 +22,13 @@ def score(p):
     return s
 
 perms = list(permutations(rules.keys()))
-max([score(p) for p in perms])
+print("Part1", max([score(p) for p in perms]))
 
 # Part 2
-
+people = set(rules.keys())
 for n in people:
     rules['me'][n] = 0
     rules[n]['me'] = 0
 
 perms = list(permutations(list(rules.keys())))
-max([score(p) for p in perms])
+print("Part2", max([score(p) for p in perms]))

@@ -11,7 +11,7 @@ for p in dat:
     j += {'^': 1, '>': 0, 'v': -1, '<': 0}[p]
     map[i,j] += 1
 
-print(len(map.keys()))
+print("Part1:", len(map.keys()))
 
 
 # part 2
@@ -34,4 +34,4 @@ for p in dat:
         map[i2, j2] += 1
     turn += 1
 
-print(len(map.keys()))
+print("Part2:", len(map.keys()))

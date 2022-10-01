@@ -8,7 +8,7 @@ def read_boss():
     for d in boss: boss[d] = int(boss[d])
     return boss
 
-# Recursively play games as a bedth-first search.
+# Recursively play games as a bredth-first search.
 # We prune (or return False) any branches where the spend is over the current best
 def play(x):
     if x.player['Spend'] > best: return False, 10000000

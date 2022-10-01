@@ -13,8 +13,7 @@ def look_and_say(inp):
 
 
 def repeat(x, n):
-    for i in range(n):
-        x = look_and_say(x)
+    for i in range(n) x = look_and_say(x)
     return len(x)
 
 print("Part1", repeat('1113222113', 40))
